@@ -1,0 +1,10 @@
+User-agent: * - для всех поисковиков
+User-agent: Googlebot - только для гугл
+Allow: / -допустить сканирование страниц
+Disallow: /- запретить сканирование страниц
+Dasallow: /vendor - всем роботам запрещается индексация
+Sitemap: https://site.com.ua/sitemap_index.xml
+Sitemap: https://site.com.ua/sitemap-image.xml
+Sitemap: https://site.com.ua/sitemap-video.xml 
+
+ 
