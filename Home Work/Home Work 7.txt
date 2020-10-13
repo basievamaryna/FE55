@@ -3,3 +3,7 @@
 имя, телефон -  обязательные поля
 Сообщение - максимальное количество ввода символов 60
 дата(максимальный ввод даты 2019.10.13)
+
+kyuretazh-parodontalnyh-kanalov
+
+kyuretazh-parodontalnyh-karmanov
