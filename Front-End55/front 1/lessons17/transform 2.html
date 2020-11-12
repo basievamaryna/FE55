@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gradient</title>
+</head>
+<style>
+.box{
+	width:200px;
+	height:50px;
+	background:#27C3A6;
+	transition:2s;
+	margin:0 auto;
+	margin-bottom:30px;
+	
+	}
+.translate:hover{
+	 transform: translate(50px, 100px);
+	-ms-transform: translate(50px, 100px);
+	-webkit-transform: translate(50px, 100px);
+	-o-transform: translate(50px, 100px);
+	-moz-transform: translate(50px, 100px);         
+	}
+.translate-X:hover{
+	transform:translateX(20px);
+	opacity:0.8;
+	}
+.scale:hover{
+	transform: scale(2,5);
+	}
+.scale-X:hover{
+	transform:scaleX(-2);
+	}
+.rotate:hover{
+	transform:rotate(30deg);
+	}
+.skew:hover{
+	transform:skew(30deg,20deg);
+	}
+.skew-x:hover{
+	transform:skewY(-30deg);
+	}
+.matrix:hover{
+	transform: matrix(0.866, 0.5, -0.5, 0.866,0,0);
+	}
+</style>
+<body>
+
+<div class="translate box">translate-X-Y</div>
+<div class="translate-X box">translateX</div>
+<div class="scale box">scale</div>
+<div class="scale-X box">scale-X</div>
+<div class="rotate box">rotate</div>
+<div class="skew box">skew</div>
+<div class="skew-x box">skew-x</div>
+<div class="matrix box">matrix</div>
+</body>
+</html>

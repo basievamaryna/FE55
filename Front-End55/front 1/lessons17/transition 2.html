@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+</head>
+<style>
+#bar {
+    top:-5.5em; right:5em; /* Положение */
+     padding: .5em; /* Поля */
+     margin: 0; /* Отступы */
+     position: absolute; /* Абсолютное позиционирование */
+     width: 2em; /* Ширина */
+     background: #333; /* Цвет фона */
+     color: #fff; /* Цвет текста */
+     text-align: center; /* Выравнивание по центру */
+     /* Переход */
+     -webkit-transition: top 1s ease-out 0.5s;
+     -moz-transition: top 1s ease-out 0.5s;
+     -o-transition: top 1s ease-out 0.5s;
+     transition: top 1s ease-out 0.5s;
+    }
+   #bar:hover { top: 0; }
+   
+   
+   .primer1{ 
+	width:100px; 
+	height:100px; 
+	background:#444;
+	margin:30px;
+	transition: all 1s linear; 
+	-webkit-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	}
+	.primer1:hover{ 
+	width:120px; 
+	height:120px; 
+	background:#AAA;
+	margin:30px;
+	transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	}
+	
+</style>
+<body>
+<ul id="bar">
+   <li>ease-out</li><li>2</li>
+   <li>3</li><li>4</li>
+   <li>&darr;</li>
+  </ul>
+  
+  <div class="primer1">linear</div>
+</body>
+</html>
