@@ -49,12 +49,4 @@ jQuery(document).ready(function () {
 		}
 	});
 	
-	jQuery('.btn_menu').click(function(event){
-				jQuery('.nav-menu ul').toggle('slow');
-		});
-	
-	
-jQuery(function() {
-   jQuery("[data-fancybox]").fancybox();
-});
 	});

@@ -4,9 +4,30 @@
 <meta charset="UTF-8">
 <title>table</title>
 </head>
-
+<style>
+  .table tr:nth-child(odd){
+	  background:#E3DDDD; /*even четные odd не четный*/
+	  }
+	 .psevdo{
+		 position:relative;
+		     padding-left: 50px;
+			 max-width:300px;
+		 }
+		.psevdo:before{
+			content:"before";
+			position:absolute;
+			color:#12EBDE;
+			left:0;
+			}
+		.psevdo:after{
+			content:"after";
+			position:absolute;
+			color:#12EBDE;
+			    right: 0;
+			}
+</style>
 <body>
-  <table border="1">
+  <table border="1" class="table">
   		<thead>
           Новая Таблица
         </thead>
@@ -67,5 +88,8 @@
                 <tr>
                 </tr>
   </table>
+  
+  
+ <div class="psevdo"> Привет использую псевдо элементы</div>
 </body>
 </html>
