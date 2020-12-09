@@ -1,0 +1,17 @@
+1) if/else
+switch (browser){
+  case 'Edge':
+   alert("Твой браузер Edge");
+   break;
+  case 'Chrome':
+  case 'fireFox':
+  case 'Safari':
+  case 'Opera':
+    alert("Ваши браузеры");
+    break;
+  default:
+  alert("Таких браузеров к сожалению нет, Вы ошиблись");
+}
+Напишите аналогичную задачу на if/else
+2) For 
+через for получить 5 значений чисел и  вывести их через alert 
