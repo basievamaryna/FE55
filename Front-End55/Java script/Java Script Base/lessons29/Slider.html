@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Main Slider</title>
+</head>
+<style>
+.mainacad-slider{
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+	}
+.mainacad-slider img{
+	max-width: 100%;
+    width: auto;
+    height: auto;
+	}
+</style>
+<body>
+  <div class="mainacad-slider">
+      <img id="slider-img" src="" />
+      <button id="click-prev">Prev</button>
+      <button id="click-next">Next</button>
+  </div>
+</body>
+<script>
+  let PrevBtn = document.getElementById('click-prev');
+  let NextBtn = document.getElementById('click-next');
+  let slideImg = document.getElementById('slider-img');
+  
+  
+  //Events click button
+  PrevBtn.addEventListener('click', onPrevBtnClick);
+  NextBtn.addEventListener('click', onNextBtnClick);
+  
+ 
+ let imgUrl  = [];
+ 	imgUrl.push('https://mport.ua/i/76/15/07/761507/e44abfa9c1735234b808f0dda56c03ae-quality_70Xresize_crop_1Xallow_enlarge_0Xw_1200Xh_643.jpg');
+	imgUrl.push('https://classpic.ru/wp-content/uploads/2015/11/6855/Gonochnye-mashiny.jpg');
+	imgUrl.push('https://hightech.fm/wp-content/uploads/2019/11/csm_2560x1440px_01_IDR_34Front_66fdc5dcac.jpg');
+	imgUrl.push('https://amsrus.ru/wp-content/uploads/2019/10/191022-01-j_003-1200x840.jpg');
+	
+	let currentIndexImg = 0;
+	slideImg.src = imgUrl[currentIndexImg];
+	PrevBtn.disabled = true;
+	
+ function onPrevBtnClick(){
+	 currentIndexImg --;
+	 slideImg.src = imgUrl[currentIndexImg];
+	 NextBtn.disabled = false;
+	 
+	 
+	 if(currentIndexImg === 0){
+		  PrevBtn.disabled = true;
+	   }
+	  }
+	  
+function onNextBtnClick(){
+	 currentIndexImg ++;
+	slideImg.src = imgUrl[currentIndexImg];
+	PrevBtn.disabled = false;
+	
+	if(currentIndexImg === (imgUrl.length - 1)){
+		NextBtn.disabled = true;
+		}
+	
+	  }
+</script>
+</html>
