@@ -56,6 +56,20 @@ setMinutes(min[,sec,ms]);
 setSeconds(sec[,ms]);
 setMilliseconds(ms);
 setTime(milliseconds);*/
+
+let days2 = ["Воскресенье", "Понедельник","Вторник","Среда","Четверг","Пятница", "Суббота"];
+let months2 =  ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let myDate2 = new Date();
+myDate2.setDate(05);
+myDate2.setMonth(00);
+myDate2.setYear(2021);
+
+let fullDate2 = "Сегодня" + " " +  myDate2.getDate() + " " +  months2[myDate2.getMonth()] + " " + myDate2.getFullYear() + " ," + " " + days2[myDate2.getDay()];
+document.write(fullDate2);
+
+let dateNow = new Date().toLocalDateString();
+console.log(dateNow.toLocalDateString());
 </script>
 </body>
 </html>
