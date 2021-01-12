@@ -51,7 +51,7 @@ catch(err){
 		/*num.toPrecision(500);*/
 		//eval("alert('Hello)"); //SyntaxError
 		//num.toUpperCase();//TypeError  мы не можем приобрезовать число верхний регистр
-		decodeURI("%%%");//не можем декодировать символы
+		//decodeURI("%%%");// URIError  не можем декодировать символы
 		}
 	catch(err){
 	  document.getElementById("demo2").innerHTML = err.name;

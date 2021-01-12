@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>moveBy</title>
+</head>
+
+<body>
+<input type="button" value="Открыть окно" onClick="openW()" />
+<input type="button" value="Переместить окно" onClick="moveW()" />
+</body>
+<script>
+let win;
+ function openW(){
+  win = window.open("", "", "width=200, height=200");
+  win.document.write("Я новое окно");
+}
+function moveW(){
+	 win.moveBy(300,200);
+	 win.focus();
+	}
+</script>
+</html>

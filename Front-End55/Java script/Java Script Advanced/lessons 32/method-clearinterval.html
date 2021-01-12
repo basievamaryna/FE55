@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Method clearInterval</title>
+</head>
+
+<body onLoad="start( )">
+<div id="timeMy">Здесь будет время</div>
+<input type="button" value="Stop" onClick="stop()" />
+</body>
+<script>
+ function time(){
+	 let dat= new Date();
+	 let hours = dat.getHours();
+	 let minutes = dat.getMinutes();
+	 let seconds = dat.getSeconds();
+	 times= hours+ ":" +minutes + ":" + seconds;
+	 document.getElementById( "timeMy").innerHTML=times;
+	 }
+	 function start(){
+		  id=setInterval('time()', 1000);
+		 }
+	function stop(){
+		clearInterval(id);
+		//clearTimeout(id);
+		}
+</script>
+</html>
