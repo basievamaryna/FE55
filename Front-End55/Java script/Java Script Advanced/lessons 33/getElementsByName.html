@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>getElementsByName</title>
+</head>
+
+<body>
+<button onClick="FuncName()">Нажми на меня</button>
+<input type="text" name="myinput" >
+<input type="text" name="myinput" >
+<input type="text" name="myinput" >
+</body>
+<script>
+function FuncName(){
+	let inputs = document.getElementsByName("myinput");
+	for(let i = 0; i< inputs.length; i++){
+		inputs[i].style.border = "2px solid blue";
+		}
+		inputs[0].value = "первый";
+		inputs[1].value = "второй";
+		inputs[2].value = "третий";
+	}
+</script>
+</html>
