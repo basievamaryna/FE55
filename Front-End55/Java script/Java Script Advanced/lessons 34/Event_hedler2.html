@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event_hedler2</title>
+</head>
+
+<body>
+<h2>Onkeypress</h2>
+<div>
+<input type="radio" name="color" value="red" onKeyPress="foncolor(this.value)" /> Красный
+<input type="radio" name="color" value="green" onKeyPress="foncolor(this.value)" /> Зеленый
+<input type="radio" name="color" value="blue" onKeyPress="foncolor(this.value)" /> Синий
+</div>
+<h2>OnChange</h2>
+<input type="text" onChange="alert(this.value)" />
+<input type="button" value="button" />
+</body>
+<script>
+ function foncolor(color){
+	 document.bgColor = color;
+	 }
+</script>
+</html>
