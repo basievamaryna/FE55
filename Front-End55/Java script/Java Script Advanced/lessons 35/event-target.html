@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Event Target</title>
+</head>
+
+<body>
+<div>
+    <span>Спан</span>
+    <p>Параграф</p>
+    <button>Кнопка</button>
+</div>
+
+<script>
+  const div = document.querySelector("div");
+  div.addEventListener("click", showTargets);
+    function showTargets (event){
+		 console.log("div currentTarget", event.currentTarget);
+		  console.log("div Target", event.target);
+		}
+</script>
+</body>
+</html>
