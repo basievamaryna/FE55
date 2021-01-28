@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+</head>
+
+<body>
+<script>
+//строка JSON
+  /*   let jsonPerson = '{"name:"Maryna", "age": 28}';
+	 
+	 //если это объект
+	 let person ={
+		 name: "Maryna",
+		 age: 28
+		 }*/
+		 
+		// то что можем получать ключи значения  JSON string, nember, object, true, false, null, Date
+		
+/*let twoPersone = '{
+	"name": "Maryna",
+	"age" : 28,
+	"mother":{
+		"name": "Svetlana",
+	     "age" : 58,
+		},
+	"children":[
+	  "Emma",
+	  "Dima",
+	  "Olga"
+	],
+	 "cat": true,
+	 "dog": null
+	}';*/
+	
+	//let persone = eval ('('+resoneData')'); используем в редком случае и аккуратно
+	//let person = JSON.parse(personeData); - парс из 	JSON переводим в оъект(parse)
+	//let personString = JSON.striglify(person)- из объекта обратно в JSON(striglify)
+	
+	
+	let personFamaly = '{"name" : "Maryna", "age": 28, "mother":{"name":"Svetlana", "age": 58}, "children":["Emma","Dima","Olga"], "cat": true, "dog": null}';
+let person = JSON.parse(personFamaly);
+console.log(person);
+</script>
+</body>
+</html>

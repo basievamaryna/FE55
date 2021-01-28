@@ -13,6 +13,7 @@
 </head>
 
 <body>
+<div class="container">
   <form id="loginForm">
     <div class="form-group">
       <label>Логин</label>
@@ -25,6 +26,7 @@
    </div>
    <button type="submit" class="btn btn-primary">Вход</button>
   </form>
+ </div>
 </body>
 <script>
 let form = document.getElementById('loginForm');
@@ -32,9 +34,9 @@ let form = document.getElementById('loginForm');
 form.onsubmit = function(event){
 	 event.preventDefault();
 	 
-	 let login = document.getElementById('login');
-	 let pass = document.getElementById('pass');
-	}
+	 let login = document.getElementById('login').value;
+	 let pass = document.getElementById('pass').value;
+   console.log(login+ " " + pass);
 let xhr = new XMLHttpRequest();
 xhr.open("GET", "login.php?login=" + login + '&pass=' + pass, true);
 xhr.send();
@@ -46,6 +48,7 @@ xhr.onreadystatechange = function(){
 		}else{
 			console.log(xhr.responseText);
 			}
+	}
 	}
 </script>
 </html>

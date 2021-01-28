@@ -1,0 +1,8 @@
+1) https://msiter.ru/tutorials/javascript (выучить на выходных все страницы в пагинации снизу)
+2) Посмотреть урок регулярное выражение  (если преподаватель задал ДЗ делаем тоже)
+http://fe.infocus.com.ua/regular-expresion.mp4
+3) Если на уроке не успели JSON который мы превратили в объект вывести в <div id="demo"></div> объект. Всех ключей и значений JSON
+4) Сделать с примера Cookie точно также(только свой текст)
+http://gnatkovsky.com.ua/vsplyvayushhee-okno-pri-zagruzke-stranice-pokazyvaetsya-odin-raz-s-zaderzhkoj.html 
+	let personFamaly = '{"name" : "Maryna", "age": 28, "mother":{"name":"Svetlana", "age": 58}, "children":["Emma","Dima","Olga"], "cat": true, "dog": null}';
+let person = JSON.parse(personFamaly);
