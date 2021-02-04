@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header.js';
-import Technologies from './Technologies.js';
+import Header from './Components/Header';
+import NavBar from './Components/NavBar';
+import MainContent from './Components/MainContent';
 
 
 const App = () => {
   return (
-    <div>
-    		 <Header />
-			 <Technologies />
+    <div className="MainClases">
+    	  <Header />
+			 <NavBar />
+       <MainContent />
 	</div>
   );
 }

@@ -1,0 +1,13 @@
+.Content{
+	grid-area: contentNew;
+	background: #5acef1;
+
+}
+
+.ImagesToProfile img{
+ width: 100%;
+}
+.ImagesToProfile{
+	height: 300px;
+    overflow: hidden;
+}

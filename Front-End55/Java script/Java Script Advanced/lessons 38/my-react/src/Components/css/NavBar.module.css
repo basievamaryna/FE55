@@ -1,0 +1,7 @@
+.NavBar{
+    grid-area: nav;
+    background: #d9ecbf;
+   }
+.item a{
+   color: #18073f; 
+}

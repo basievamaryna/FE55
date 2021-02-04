@@ -1,0 +1,9 @@
+.HeaderMain{
+	grid-area: header;
+	background: rgb(24, 90, 40);
+   
+}
+.HeaderMain img{
+	width: 100px;
+	margin-left: 50px;
+}
